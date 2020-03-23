@@ -1,7 +1,7 @@
 const {Book} = require('../models')
 
 class BookController {
-  create(req, res, next) {
+  static create(req, res, next) {
     const { isbn, title, author, category, stock } = req.body;
     Book.create({ isbn, title, author, category, stock })
       .then(function(newBook) {
