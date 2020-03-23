@@ -1,0 +1,23 @@
+{
+  "name": "libraryV2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "npx nodemon bin/www",
+    "test": "NODE_ENV=test jest --detectOpenHandles --runInBand --forceExit"
+  },
+  "author": "Hary Dhimas Prakoso",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^7.18.2",
+    "sequelize": "^5.21.5"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "jest": "^25.1.0",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2"
+  }
+}
