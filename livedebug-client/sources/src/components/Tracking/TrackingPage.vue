@@ -27,9 +27,9 @@
 
           <!-- Country Cards-->
           <TrackingCard
-            v-for="country in filterCountries"
+            v-for="country in this.filterCountries"
             :key="country.id"
-            @country="country"/>
+            :country="country"/>
         </div>
       </div>
     </div>
@@ -56,7 +56,8 @@ export default {
     return {
       searchQuery: '',
       searchQueryIsDirty: false,
-      isCalculating: false
+      isCalculating: false,
+      filterCountries:[]
     }
   },
   computed: {

@@ -1,4 +1,4 @@
-const Book = require('../models').Book;
+const {Book} = require('../models')
 
 class BookController {
   create(req, res, next) {
